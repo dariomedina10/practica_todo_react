@@ -10,7 +10,19 @@ function App() {
   return (
     <>
        <div>
-           <Todo/>
+
+        <ul
+  role="list"
+  className="todo-list stack-large stack-exception"
+  aria-labelledby="list-heading">
+  <Todo name="Eat" />
+  <Todo name="Sleep" />
+  <Todo name="Repeat" />
+</ul>
+
+           {/* <Todo/>
+             <Todo />
+          <Todo /> */}
 
       {/*  <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
