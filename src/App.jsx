@@ -3,23 +3,32 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import Todo from './Componentes/Todo'
 import './App.css'
-
+<App tasks={DATA} />
+const taskList = props.tasks?.map((task) => task.name);
 function App() {
+
   const [count, setCount] = useState(0)
 
   return (
     <>
        <div>
 
-        <ul
+<ul
   role="list"
   className="todo-list stack-large stack-exception"
   aria-labelledby="list-heading">
-  <Todo name="Eat" />
-  <Todo name="Sleep" />
-  <Todo name="Repeat" />
+  
+  <Todo name="Eat" id="todo-0" completed />
+  <Todo name="Sleep" id="todo-1" />
+  <Todo name="Repeat" id="todo-2" />
 </ul>
 
+<ul
+  role="list"
+  className="todo-list stack-large stack-exception"
+  aria-labelledby="list-heading">
+  {taskList}
+</ul>
            {/* <Todo/>
              <Todo />
           <Todo /> */}
