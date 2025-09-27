@@ -2,6 +2,7 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import Todo from './Componentes/Todo'
+import VectorEstados from './Componentes/VectorEstados'
 import Form from './Componentes/Form'
 import FilterButton from './Componentes/FilterButton'
 import './App.css'
@@ -57,6 +58,7 @@ function App() {
       <h3>Calculo inmediato de expresiones</h3>
       3 + 3 = {3 + 3}
       <App2 />;
+      <VectorEstados/>
     </div>
    
     
